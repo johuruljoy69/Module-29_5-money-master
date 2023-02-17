@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl text-center font-semibold text-amber-700 mt-12">Money Master!</h1>
+    </header>
+    <main>
+        <section class="mt-10 mb-12">
+            <div class="grid grid-cols-2 gap-3 w-9/12 mx-auto">
+                <img src="images/money.png" alt="">
+                <div class="bg-green-50 p-5">
+                    <div class="text-center">
+                        <p class="text-2xl font-semibold pb-2">Income</p>
+                        <label for="Income" class="font-semibold">Income</label>
+                        <input id="income-field" class="w-2/4 rounded-sm border-2 px-2" type="text">
+                    </div>
+                    <div class="py-2 text-center">
+                        <p class="text-2xl font-semibold pb-2">Expenses</p>
+                        <div class="pb-2">
+                            <label for="food" class="font-semibold">Food</label>
+                            <input id="food-field" class="w-2/4 rounded-sm border-2 px-2" type="text">
+                        </div>
+                        <div class="pb-2">
+                            <label for="rent" class="font-semibold">Rent</label>
+                            <input id="rent-field" class="w-2/4 rounded-sm border-2 px-2" type="text">
+                        </div>
+                        <div>
+                            <label for="clothes" class="font-semibold">Clothes</label>
+                            <input id="clothes-field" class="w-2/4 rounded-sm border-2 px-2" type="text">
+                        </div>
+                    </div>
+                    <div class="mx-auto text-center">
+                        <button id="btn-calculator"
+                            class="text-xl text-white font-semibold py-2 px-3 bg-blue-600 hover:bg-blue-800 rounded-lg mb-1">Calculate</button>
+                        <p class="text-xl font-semibold pb-2">Total Expenses: $<span id="total-expenses">00</span></p>
+                        <p class="text-xl font-semibold pb-2">Balance: $<span id="balance">00</span></p>
+                    </div>
+                    <div class="grid grid-cols-2 text-center">
+                        <div>
+                            <label for="save" class="font-semibold">Save</label>
+                            <input id="save-field" class="w-9/12 rounded-sm border-2 px-2" type="text">
+                        </div>
+                        <div class="grid grid-cols-2">
+                            <label for="text">%</label>
+                            <button id="btn-save" class="text-xl text-white font-semibold px-8 py-1 bg-blue-600 hover:bg-blue-800 rounded-lg mb-1">Save</button>
+                        </div>                        
+                    </div>
+                    <div class="text-center text-2xl font-semibold mt-3">
+                        <p>Saving Amount: $<span id="saving-amount">00</span></p>
+                        <p>Remaining Balance: $<span id="remaining-balance">00</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- JavaScript link -->
+    <script src="js/money.js"></script>
+</body>
+
+</html>
